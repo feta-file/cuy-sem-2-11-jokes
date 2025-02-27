@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesi 11 Onsen Ui</title>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">CAPTURE QUOTES</div>
+            <div class="right">
+                <ons-toolbar-button>
+                    <a download id="screenshoot"><i class="fas fa-camera"></i></a>
+                </ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+
+        <ons-fab position="bottom right" onclick="generateIdea()">
+            <ons-icon icon="md-plus"></ons-icon>
+        </ons-fab>
+
+        <div id="result">
+            <h1 id="activity"></h1>
+            <p id="type"></p>
+        </div>
+    </ons-page>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
